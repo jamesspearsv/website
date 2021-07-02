@@ -36,7 +36,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.6;
     letter-spacing: -0.02rem;
 }
@@ -322,6 +322,41 @@ main {
                 animation: fade-in 300ms ease-in-out forwards;
             }
     }
+
+    //Contact styling
+    #contact {
+        #contact_content {
+            text-align: center;
+
+            #contact_container {
+                display: grid;
+                place-items: center;
+            }
+
+            #social_icons {
+                a {
+                    text-decoration: none;
+                }
+                
+                .icon {
+                    height: 50px;
+                    width: 50px;
+                    
+                    margin: 15px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $color-primary;
+    height: $nav_height;
+
+    display: grid; 
+    place-items: center;
+    color: #ffffff;
 }
 
 
