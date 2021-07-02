@@ -363,12 +363,6 @@ main #contact #contact_content {
   text-align: center;
 }
 
-main #contact #contact_content #contact_container {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
 main #contact #contact_content #social_icons a {
   text-decoration: none;
 }
