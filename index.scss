@@ -325,6 +325,9 @@ main {
 
     //Contact styling
     #contact {
+        display: grid;
+        place-items: center;
+
         #contact_content {
             text-align: center;
 

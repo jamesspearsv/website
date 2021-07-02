@@ -359,6 +359,12 @@ main #top_btn.scrolled {
           animation: fade-in 300ms ease-in-out forwards;
 }
 
+main #contact {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
 main #contact #contact_content {
   text-align: center;
 }
