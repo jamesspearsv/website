@@ -1,0 +1,203 @@
+// Mobile & Tablet view
+@media (max-width: 750px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        top: 0%;
+        width: 100vw;
+        height: $mobile_nav_height;
+        position: fixed;
+        transition: all 300ms ease-in-out;
+
+
+        &.nav_opened {
+            //min-height: 100vh;
+            background-color: $color-primary;
+
+            //height: 100vh;
+            //display: flex;
+            //flex-direction: column;
+
+            //justify-content: center;
+            //align-content: center;
+
+            //#nav_menu {
+            //    animation: fade-in 300ms ease-in-out 50ms forwards;
+            //    height: 100vh;
+            //    display: flex;
+            //    flex-direction: column;
+            //    justify-content: center;
+            //    align-content: center;
+            //    
+            //}
+
+            #menu_overlay {
+                margin-left: 0vw;
+            }
+
+            #hamburger_btn {
+                span:first-child {
+                    transform: rotate(45deg);
+                }
+                
+                span:nth-child(2) {
+                    opacity: 0;
+                }
+                
+                span:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        #menu_overlay {
+            transition: all 300ms ease-in-out;
+            background-color: $color-primary;   
+            margin-top: $mobile_nav_height;
+            margin-left: 100vw;
+            height: 100vh;
+            width: 100vw;
+
+            ul {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                font-size: 1.6rem;
+
+                li {
+                    margin: 3vh;
+
+                    a  {
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+        }
+
+        #hamburger_container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 33px;
+
+            height: $mobile_nav_height;
+            
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            
+            #hamburger_btn {
+                display: block;
+                background-color: transparent;
+                border: none;
+                    
+                    
+                    span {
+                        height: 3px;
+                        width: 35px;
+                        background-color: #ffffff;
+                        display: block;
+                        transform-origin: 1.5px 1.5px;
+                        transition: all 300ms ease-in-out;
+                    }
+                    
+                    span:not(#line_1) {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+        
+    main {
+        .page_section {
+            min-height: 50vh;
+            padding-top: $mobile_nav_height;
+            padding-bottom: 5vh;
+            
+            .container {
+                width: 85%;
+                margin: auto;
+            }
+
+            .content {
+                padding-top: 2%;
+            }
+        }
+
+        #home {
+            #hero_content {
+                font-size: 1.7rem;
+            } 
+        }
+
+        #about_me {
+            #about_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                #bio {
+                    padding-top: $content_margin;
+                    width: auto;
+                }
+
+                #headshot {
+                    width: 50vw;
+                    height: auto;
+                }
+            }
+        }
+
+        #education {
+            #edu_content {
+                display: flex;
+                flex-direction: column-reverse;
+
+                #edu_bio {
+                    width: 100%;
+                }
+    
+                #edu_logos {
+    
+                    .edu_logo {
+                        height: 100px;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        #experience {
+            .card {
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                padding: 8%;
+                margin-bottom:10%;
+
+                .card_section_left, .card_section_right {
+                    width: 100%;
+                }
+
+                .card_section_left {
+                    //margin-top: 6%;
+                }
+
+                .card_section_right {
+                    text-align: center;
+                    margin-top: 6%;
+                }
+            }
+        }
+
+        #top_btn {
+            display: none;
+         }
+    }
+
+}
